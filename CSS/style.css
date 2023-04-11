@@ -5,6 +5,40 @@
 }
 
 body {
+    color: white;
+    background-color: rgb(16, 16, 16);
     text-align: center;
-    margin-top: 20px;
+}
+
+h2 {
+    color: tomato;
+    font-style: italic;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+ul > li {
+    border: 1px solid white;
+    background-color: rgba(0, 255, 255, 0.064);
+}
+
+.flex {
+    display: flex;
+}
+
+.loadingText {
+    border: 3px dotted white;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-container {
+    margin-top: 13vh;
+}
+
+.mailItem {
+    padding: 10px 0;
 }

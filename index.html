@@ -12,7 +12,14 @@
 
 <body>
     <div id="app">
-        <p v-if="rndMails">{{ rndMails }}</p>
+        <div v-if="mailsArch.length !== 10" class="flex loadingText">
+            <h2>Generating mails. . .</h2>
+        </div>
+        <div v-else class="list-container">
+            <ul v-for="mail in mailsArch">
+                <li v-if="mailsArch.length === 10" class="mailItem">{{ mail }}</li>
+            </ul>
+        </div>
     </div>
 
     <script src="JS/script.js"></script>
